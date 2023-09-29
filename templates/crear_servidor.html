@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Servidor</title>
+</head>
+<body>
+    <h1>Crear Servidor</h1>
+    <form id="server-form">
+        <label for="nombre-servidor">Nombre del Servidor:</label>
+        <input type="text" id="nombre-servidor" required>
+        <label for="descripcion-servidor">Descripción:</label>
+        <textarea id="descripcion-servidor" required></textarea>
+        <button type="button" id="crear-servidor">Crear Servidor</button>
+    </form>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const crearServidorButton = document.getElementById("crear-servidor");
+    
+            crearServidorButton.addEventListener("click", function() {
+                const nombreServidor = document.getElementById("nombre-servidor").value;
+                const descripcionServidor = document.getElementById("descripcion-servidor").value;
+    
+                
+                console.log("Nombre del Servidor:", nombreServidor);
+                console.log("Descripción del Servidor:", descripcionServidor);
+    
+                
+                document.getElementById("server-form").reset();
+            });
+        });
+    </script>
+    
+</body>
+</html>

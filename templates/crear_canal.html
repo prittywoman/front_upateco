@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Canal</title>
+</head>
+<body>
+    <h1>Crear Canal</h1>
+    <form id="channel-form">
+        <label for="nombre-canal">Nombre del Canal:</label>
+        <input type="text" id="nombre-canal" required>
+        <label for="descripcion-canal">Descripción:</label>
+        <textarea id="descripcion-canal" required></textarea>
+        <button type="button" id="crear-canal">Crear Canal</button>
+    </form>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const crearCanalButton = document.getElementById("crear-canal");
+    
+            crearCanalButton.addEventListener("click", function() {
+                const nombreCanal = document.getElementById("nombre-canal").value;
+                const descripcionCanal = document.getElementById("descripcion-canal").value;
+    
+                
+                console.log("Nombre del Canal:", nombreCanal);
+                console.log("Descripción del Canal:", descripcionCanal);
+    
+                document.getElementById("server-form").reset();
+            });
+        });
+    </script>
+</body>
+</html>

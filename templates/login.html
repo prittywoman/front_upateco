@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mi aplicación</title>
+    <link href="login.css" rel="stylesheet">
+</head>
+<body class="text-center">
+    <main class="form-signin">
+        <form onsubmit="return login()">
+            <img class="mb-4" src="./logo.png" alt="" height="300">
+            <h1 class="h3 mb-3 fw-normal"><b>Mi aplicación</b> - Ingresar</h1>
+    
+            <div class="form-floating">
+                <input type="text" class="form-control" id="nombre_usuario">
+                <label for="nombre_usuario">Nombre de usuario</label>
+            </div>
+            
+            <div class="form-floating">
+                <input type="password" class="form-control" id="contraseña">
+                <label for="contraseña">Contraseña</label>
+            </div>
+    
+            <button class="w-100 btn btn-lg btn-primary mt-3" type="submit">Iniciar Sesión</button>
+            
+            
+            <a href="registro.html">¿No tienes cuenta? Regístrate aquí</a>
+        </form>
+    </main>
+    <script src="login.js"></script>
+</body>
+</html>

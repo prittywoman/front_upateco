@@ -1,0 +1,21 @@
+Archivos de configuracion del editor
+.idea/
+.vscode/
+*.suo
+*.njsproj
+*.sln
+
+/node_modules/
+
+npm-debug.log
+yarn-error.log
+
+/dist/
+/build/
+
+*.tmp
+*.swp
+*.swo
+*.bak
+.DS_Store
+Thumbs.db 

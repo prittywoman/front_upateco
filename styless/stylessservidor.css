@@ -1,0 +1,101 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.discord-app {
+    display: flex;
+    height: 100vh;
+}
+
+
+.column {
+    flex: 1;
+    border-right: 1px solid #ccc;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #f4f4f4;
+}
+
+
+.server-list {
+    list-style: none;
+    padding: 0;
+}
+
+.server-item {
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.server-item:hover {
+    background-color: #ddd;
+}
+
+
+.channel-list {
+    list-style: none;
+    padding: 0;
+}
+
+.channel-item {
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.channel-item:hover {
+    background-color: #ddd;
+}
+
+
+.chat {
+    flex: 3;
+    padding: 10px;
+}
+
+
+.channel-header {
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+}
+
+.channel-header h2 {
+    margin: 0;
+}
+
+
+.message-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-height: 300px;
+    background-color: #fff;
+    overflow-y: auto;
+}
+
+
+.message-input {
+    margin-top: 10px;
+}
+
+.message-input input {
+    width: 80%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.message-input button {
+    width: 18%;
+    padding: 5px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

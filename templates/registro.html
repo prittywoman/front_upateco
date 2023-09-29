@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="registro.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registrarse</h1>
+        <form id="register-form">
+            <div class="form-group">
+                <label for="nombre_usuario">Nombre de Usuario:</label>
+                <input type="text" id="nombre_usuario" name="nombre_usuario" placeholder="Nombre de Usuario" required>
+            </div>
+            <div class="form-group">
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            
+            <button type="submit">Registrar</button>
+        
+            <a href="login.html">¿Ya tienes una cuenta? Inicia sesión aquí</a>
+        </form>
+        
+    </div>
+    <script src="registro.js"></script>
+</body>
+</html>
+
